@@ -4,7 +4,7 @@ section		.text
 global		_start
 
 _start:
-	lea		rdi, [msg]      ; rdi = &msg[0]
+	lea	rdi, [msg]      ; rdi = &msg[0]
 	call	printstr        ; printstr(msg)
 	call	endl            ; endl()
         xor     rdi, rdi        ; rdi = 0
